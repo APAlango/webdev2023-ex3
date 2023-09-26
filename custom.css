@@ -36,3 +36,30 @@ footer {
   margin-top: 60px;
   padding: 5em;
 }
+
+footer svg {
+  display: block;
+  max-height: 2rem;
+  max-width: 2rem;
+  padding: 0;
+}
+
+.shipping-option-container {
+  padding: 0.375rem 0.75rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.carousel-inner {
+  max-height: 80vh;
+  object-fit: cover;
+}
+.carousel-inner img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#aboutus img {
+  border-radius: 50%;
+  padding: 2rem;
+}

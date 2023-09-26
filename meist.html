@@ -12,7 +12,7 @@
       content="Veebilehtede loomine edasijõudnutele (LTAT.03.015) ülesanne 3"
     />
     <meta name="author" content="Arean-Pärt Alango" />
-    <title>Avaleht</title>
+    <title>Meist</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -131,138 +131,179 @@
     <section>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white my-2 ml-2">
-          <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
-                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
-                    -->
-          <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+          <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+          <li class="breadcrumb-item active">Meist</li>
         </ol>
       </nav>
     </section>
-    <!-- jumbotron --->
-    <!-- TODO! added --->
+    <!-- sisu -->
+    <!-- Tutvustus -->
     <section>
-      <div class="container col-xxl-8 px-4 py-2">
-        <div class="row flex-lg-row-reverse align-items-center g-5 pb-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="soaps.jpg"
-              class="d-block mx-lg-auto img-fluid rounded"
-              alt="SEEP!"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Osta 2 seepi, saa 1 tasuta!
-            </h1>
-            <p class="lead">
-              Meie e-poe 3. sünnipäeva puhul kehtib kampaania, mille puhul saad
-              2 seepi ostes 1 tasuta kaasa!<br />
-              <small class="fw-lighter"
-                ><em>Kampaania kehtib kuni 30.09.</em></small
-              >
-            </p>
-            <div class="d-grid d-md-flex justify-content-md-start">
-              <a
-                class="btn btn-primary btn-lg px-4 me-md-2"
-                href="list.html"
-                role="button"
-              >
-                Tutvu valikuga
-              </a>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="about-us-container">
+              <h1 class="text-center">Seebi ja Ilu kohta</h1>
+              <p>
+                Tere tulemast Seebi ja Ilu poodi, kus kohtuvad loomulik ilu ja
+                enesehooldus. Oleme pühendunud kvaliteetsetele käsitööseepidele,
+                vannitoodetele ning naha- ja kehahooldusesemetele, mis toidavad
+                nahka ja noorendavad meeli.
+              </p>
+              <p>
+                Meie teekond sai alguse lihtsast ideest: pakkuda inimestele
+                tooteid, mis ei ole head mitte ainult nende nahale, vaid ka
+                planeedile. Usume looduslike koostisosade jõusse ning
+                jätkusuutlike tavade olulisusesse.
+              </p>
+              <p>
+                Meie eristav faktor on meie järjepidevus looduslike koostisosade
+                kasutamisel. Iga toode on hoolikalt valmistatud armastuse ja
+                tähelepanuga. Me väldime karme kemikaale ja sünteetilisi
+                lisaaineid, tagades, et meie tooted on teie naha vastu õrnad.
+              </p>
+              <p>
+                Seep ja Ilu on uhke oma loodussõbraliku lähenemise üle. Kõik
+                meie pakendid on taaskasutatavad ja me väldime jäätmete
+                tekkimist, kui vähegi võimalik. Me usume, et sellega anname
+                tagasi meid toitvale keskkonnale.
+              </p>
+              <p>
+                Täname, et valisite meid oma partneriks, oma teekonnal kauni ja
+                terve nahani. Kutsume teid meie kollektsiooniga tutvuma ja
+                avastama looduslike imesid, mis teid ees ootavad.
+              </p>
+              <p class="text-center">
+                <strong>Tähistame koos looduslikku ilu!</strong>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- tooted --->
+    <!-- Karusell -->
     <section>
+      <div id="imageCarousel" class="carousel slide m-4" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li
+            data-target="#imageCarousel"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#imageCarousel" data-slide-to="1"></li>
+          <li data-target="#imageCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="soapbanner.jpg"
+              class="d-block w-100"
+              alt="Seebid 1. pilt"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="soapbanner1.jpg"
+              class="d-block w-100"
+              alt="Seebid 2. pilt"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="soapbanner2.jpg"
+              class="d-block w-100"
+              alt="Seebid 3. pilt"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a
+          class="carousel-control-prev"
+          href="#imageCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Eelmine</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#imageCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Järgmine</span>
+        </a>
+      </div>
+    </section>
+    <!-- Tiimi tutvustus -->
+    <section id="aboutus">
       <div class="container">
-        <h2 class="h mb-3">TOP</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="toode.html"
-                ><img src="soap.png" alt="" class="card-img-top"
-              /></a>
-              <div class="card-body">
-                <h5><a href="toode.html" class="text-dark">Toode 1</a></h5>
-                <p class="text-muted card-text">15.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card text-dark bg-light h-100">
+              <img src="person.jpg" class="card-img-top" alt="Jaanika" />
+              <div class="card-body pt-0">
+                <h5 class="card-title mb-0 text-center">Jaanika</h5>
+                <p class="card-text text-center"><small>Poe juhataja</small></p>
+                <p class="card-text">
+                  Jaanika on meie poe süda ja hing, kes hoolitseb selle eest, et
+                  iga külastaja tunneks end teretulnuna ning saaks sõbraliku ja
+                  teadmisterohke teeninduse.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="toode.html"
-                ><img src="soap.png" alt="" class="card-img-top"
-              /></a>
-              <div class="card-body">
-                <h5><a href="toode.html" class="text-dark">Toode 2</a></h5>
-                <p class="text-muted card-text">12.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
+          <div class="col">
+            <div class="card h-100 text-dark bg-light">
+              <img src="person1.jpg" class="card-img-top" alt="Margus" />
+              <div class="card-body pt-0">
+                <h5 class="card-title mb-0 text-center">Margus</h5>
+                <p class="card-text text-center">
+                  <small>Tarned ja kvaliteedikontroll</small>
+                </p>
+                <p class="card-text">
+                  Margus tagab, et iga toode, mida meie riiulitelt leiate, oleks
+                  toodetud hoole ja täpsusega, kasutades vaid parimaid
+                  looduslikke koostisosi.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="toode.html"
-                ><img src="soap.png" alt="" class="card-img-top"
-              /></a>
-              <div class="card-body">
-                <h5><a href="toode.html" class="text-dark">Toode 3</a></h5>
-                <p class="text-muted card-text">9.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
+          <div class="col">
+            <div class="card h-100 text-dark bg-light">
+              <img src="person2.jpg" class="card-img-top" alt="Juhan" />
+              <div class="card-body pt-0">
+                <h5 class="card-title mb-0 text-center">Juhan</h5>
+                <p class="card-text text-center">
+                  <small>Turundus- ja finantsjuht</small>
+                </p>
+                <p class="card-text">
+                  Juhan, meie turunduse ja finantside ekspert, viib meie brändi
+                  uutele kõrgustele loovate kampaaniate ja soliidse
+                  finantsjuhtimisega.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="toode.html"
-                ><img src="soap.png" alt="" class="card-img-top"
-              /></a>
-              <div class="card-body">
-                <h5><a href="toode.html" class="text-dark">Toode 4</a></h5>
-                <p class="text-muted card-text">18.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="toode.html"
-                ><img src="soap.png" alt="" class="card-img-top"
-              /></a>
-              <div class="card-body">
-                <h5><a href="toode.html" class="text-dark">Toode 5</a></h5>
-                <p class="text-muted card-text">1.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border-0 h-100 text-center">
-              <a href="toode.html"
-                ><img src="soap.png" alt="" class="card-img-top"
-              /></a>
-              <div class="card-body">
-                <h5><a href="toode.html" class="text-dark">Toode 6</a></h5>
-                <p class="text-muted card-text">5.99&#8364;</p>
-                <a role="button" href="toode.html" class="btn btn-outline-dark"
-                  >Vaata</a
-                >
+          <div class="col">
+            <div class="card h-100 text-dark bg-light">
+              <img src="person3.jpg" class="card-img-top" alt="Mari" />
+              <div class="card-body pt-0">
+                <h5 class="card-title mb-0 text-center">Mari</h5>
+                <p class="card-text text-center">
+                  <small>Omanik ja visionäär</small>
+                </p>
+                <p class="card-text">
+                  Mari on meie pere eestvedaja ja looja. Ta asutas poe, et
+                  jagada oma armastust puhaste ja kosutavate toodete vastu ning
+                  tema kirg enesehoolduse vastu inspireerib meid kõiki.
+                </p>
               </div>
             </div>
           </div>
